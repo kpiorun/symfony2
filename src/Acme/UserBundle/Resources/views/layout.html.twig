@@ -1,0 +1,20 @@
+{# empty Twig template #}
+{# MopaBootstrapSandboxBundle:Examples:forms.html.twig #}
+
+        
+
+    {%extends '::base.html.twig'%}
+
+
+        {% block body %}
+           
+            <link href="{{ asset('bundles/user/css/bootstrap.css') }}" type="text/css" rel="stylesheet" />
+             <script src="{{asset('bundles/piorunhomesite/js/jquery.min.js')}}"></script>
+           
+            
+            {{block('fos_user_content')}}
+
+
+
+        {% endblock %}
+ 

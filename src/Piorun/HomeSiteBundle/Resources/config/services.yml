@@ -1,0 +1,15 @@
+parameters:
+#    piorun_home_site.example.class: Piorun\HomeSiteBundle\Example
+
+services:
+#    piorun_home_site.example:
+#        class: %piorun_home_site.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
+    piorun.twig.piorun_extension:
+            class: Piorun\HomeSiteBundle\Twig\PiorunExtension
+            tags:
+                - { name: twig.extension }
+    
+    authentication_handler:
+        class: 'FOS\UserBundle\Handler\AuthenticationHandler'
+        arguments: ["@service_container"]

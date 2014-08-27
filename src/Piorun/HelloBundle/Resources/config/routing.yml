@@ -1,0 +1,3 @@
+piorun_hello_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: PiorunHelloBundle:Default:index }

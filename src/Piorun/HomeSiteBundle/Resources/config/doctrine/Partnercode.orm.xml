@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Piorun\HomeSiteBundle\Entity\Partnercode" table="partnercode">
+    <id name="id" type="bigint" column="id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="name" type="text" column="name" nullable="false"/>
+    <field name="partnercode" type="text" column="partnercode" nullable="false"/>
+    <field name="active" type="integer" column="active" nullable="false"/>
+    <field name="creationdate" type="datetime" column="creationdate" nullable="false"/>
+  </entity>
+</doctrine-mapping>

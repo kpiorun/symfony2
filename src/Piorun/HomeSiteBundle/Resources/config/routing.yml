@@ -1,0 +1,16 @@
+piorun_home_site_homepage:
+    pattern:  /strona-glowna
+    defaults: { _controller: PiorunHomeSiteBundle:HomeSite:index }
+    
+piorun_home_site_adminpage:
+    pattern:  /generuj-kod
+    defaults: { _controller: PiorunHomeSiteBundle:AdminSite:index }
+
+piorun_home_site_register_client_page:
+    pattern:  /zarejestruj-sie
+    defaults: { _controller: PiorunHomeSiteBundle:RegisterClientSite:registerClient }
+
+
+
+
+    
